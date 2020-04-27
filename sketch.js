@@ -1,9 +1,13 @@
+var player;
+var pCount = 0;
+
 function setup() {
-  createCanvas(800,400);
-  createSprite(400, 200, 50, 50);
+    createCanvas(windowWidth, windowHeight);
+    player = new Player();
+    Player.initForm();
+    Player.showForm();
 }
 
 function draw() {
-  background(255,255,255);  
-  drawSprites();
+    background(255, 255, 255);
 }
