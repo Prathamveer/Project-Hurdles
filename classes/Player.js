@@ -1,6 +1,7 @@
 class Player {
     constructor() {
         this.name = null;
+        this.finished = false;
     }
 
     static initForm() {
@@ -30,7 +31,9 @@ class Player {
         })
     }
 
-    update(name, distance) {
-
+    updateFinished() {
+        finishedPlayers++;
+        this.rank = finishedPlayers;
+        this.finished = true;
     }
 }

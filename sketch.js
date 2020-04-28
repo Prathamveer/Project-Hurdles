@@ -1,5 +1,6 @@
 var player;
 var pCount = 0;
+var finishedPlayers = 0;
 
 function setup() {
     createCanvas(windowWidth, windowHeight);
